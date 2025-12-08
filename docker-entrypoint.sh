@@ -23,21 +23,26 @@ if [ -n "$DATABASE_URL" ]; then
   fi
 fi
 
-# Run migrations in order of preference:
-# 1) Alembic (alembic.ini)
-# 2) repo-specific migration script: infrastructure/02_auto_migration_on_startup.py
-# 3) migrations/setup_database.py
-if [ -f /app/alembic.ini ]; then
-  echo "Found alembic.ini: running alembic upgrade head"
-  alembic upgrade head
-elif [ -f /app/infrastructure/02_auto_migration_on_startup.py ]; then
-  echo "Found infrastructure/02_auto_migration_on_startup.py: running auto-migration script"
-  python /app/infrastructure/02_auto_migration_on_startup.py
-elif [ -f /app/migrations/setup_database.py ]; then
-  echo "Found migrations/setup_database.py: running it"
-  python /app/migrations/setup_database.py
+# Migrations: can be skipped with SKIP_MIGRATIONS=1 or SKIP_MIGRATIONS=true
+if [ "${SKIP_MIGRATIONS:-}" = "1" ] || [ "${SKIP_MIGRATIONS:-}" = "true" ]; then
+  echo "SKIP_MIGRATIONS is set; skipping migration steps"
 else
-  echo "No migration tool found (alembic or repo migration script). Skipping migrations."
+  # Run migrations in order of preference:
+  # 1) Alembic (alembic.ini)
+  # 2) repo-specific migration script: infrastructure/02_auto_migration_on_startup.py
+  # 3) migrations/setup_database.py
+  if [ -f /app/alembic.ini ]; then
+    echo "Found alembic.ini: running alembic upgrade head"
+    alembic upgrade head
+  elif [ -f /app/infrastructure/02_auto_migration_on_startup.py ]; then
+    echo "Found infrastructure/02_auto_migration_on_startup.py: running auto-migration script"
+    python /app/infrastructure/02_auto_migration_on_startup.py
+  elif [ -f /app/migrations/setup_database.py ]; then
+    echo "Found migrations/setup_database.py: running it"
+    python /app/migrations/setup_database.py
+  else
+    echo "No migration tool found (alembic or repo migration script). Skipping migrations."
+  fi
 fi
 
 echo "Starting Uvicorn"
