@@ -1,0 +1,220 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: ueba_db
+    environment:
+      POSTGRES_DB: ueba_security
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-example}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432" # host:container (useful for local DB access)
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ueba_network
+
+  redis:
+    image: redis:7
+    container_name: ueba_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - ueba_network
+
+  web:
+    build: .
+    container_name: ueba_web
+    env_file:
+      - .env
+    environment:
+      # Default connection string inside compose network
+      DATABASE_URL: postgresql://postgres:${DB_PASSWORD:-example}@db:5432/ueba_security
+      # Useful defaults (override in .env or environment)
+      DEBUG: "false"
+      SECRET_KEY: ${SECRET_KEY:-change_this}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - ./templates:/app/templates
+      - ./static:/app/static
+    networks:
+      - ueba_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  db_data:
+
+networks:
+  ueba_network:
+    driver: bridge
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: ueba_security
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  web:
+    build: .
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://postgres:example@db:5432/ueba_security
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+volumes:
+  db_data:
+# =====================================================
+# UEBA Security Platform - Docker Compose
+# =====================================================
+# Purpose: Deploy UEBA server + PostgreSQL in containers
+# Date: November 27, 2025
+# =====================================================
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: ueba_postgres
+    environment:
+      POSTGRES_DB: ueba_security
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-your_secure_password_here}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d  # Auto-run SQL scripts on first start
+    ports:
+      - "5432:5432"
+    networks:
+      - ueba_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # UEBA Application Server
+  ueba_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ueba_server
+    environment:
+      # Database connection
+      DATABASE_URL: postgresql://postgres:${DB_PASSWORD:-your_secure_password_here}@postgres:5432/ueba_security
+      
+      # Server settings
+      DEBUG: "false"
+      SECRET_KEY: ${SECRET_KEY:-change_this_to_random_secret_key}
+      ACCESS_TOKEN_EXPIRE_MINUTES: "30"
+      
+      # CORS settings
+      CORS_ORIGINS: "*"
+      
+      # Active Directory (optional)
+      AD_SERVER: ${AD_SERVER:-}
+      AD_USERNAME: ${AD_USERNAME:-}
+      AD_PASSWORD: ${AD_PASSWORD:-}
+      AD_BASE_DN: ${AD_BASE_DN:-}
+      
+      # Email alerts (optional)
+      SMTP_SERVER: ${SMTP_SERVER:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      ALERT_FROM_EMAIL: ${ALERT_FROM_EMAIL:-}
+      
+    volumes:
+      # HOT-RELOAD: Mount source code (no rebuild needed for changes!)
+      - ./app:/app/app
+      - ./config:/app/config
+      - ./templates:/app/templates
+      - ./static:/app/static
+      
+      # Persistent data
+      - ./logs:/app/logs
+      - ./ml_models:/app/ml_models
+      - ./data:/app/data
+      
+    ports:
+      - "8000:8000"
+    
+    networks:
+      - ueba_network
+    
+    depends_on:
+      postgres:
+        condition: service_healthy
+    
+    restart: unless-stopped
+    
+    # Resource limits (PERFORMANCE OPTIMIZATION)
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'          # Allow up to 2 CPU cores
+          memory: 1G           # Max 1GB RAM
+        reservations:
+          cpus: '0.5'          # Reserve 0.5 core
+          memory: 512M         # Reserve 512MB RAM
+    
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  ueba_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
