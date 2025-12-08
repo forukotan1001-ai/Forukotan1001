@@ -1,0 +1,30 @@
+# Curated core runtime dependencies for D:\UebaSecurityV2
+# This is the "final" curated core list produced by a full import audit.
+# These are minimal runtime libs required to create and run the FastAPI app
+# and the helper scripts used during development. Heavy ML/data-science libs
+# are intentionally kept out (see requirements-ml.txt).
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+psycopg2-binary
+requests
+jinja2
+ldap3
+python-nmap
+psutil
+netaddr
+email-validator
+cryptography
+schedule
+pytz
+
+# Optional / helpful developer utilities (not strictly required at runtime)
+python-dateutil
+colorama
