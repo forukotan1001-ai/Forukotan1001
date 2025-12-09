@@ -14,7 +14,13 @@ import sys
 
 BASE = os.environ.get('BASE_URL', 'http://localhost:8000')
 
-def test_login(username='admin', password='Admin@123456'):
+def test_login(username='admin', password=None):
+    # Password should be provided via SMOKE_PASSWORD env var for security
+    if password is None:
+        password = os.environ.get('SMOKE_PASSWORD') or os.environ.get('ADMIN_PASSWORD')
+    if not password:
+        print('ERROR: No password provided. Set SMOKE_PASSWORD or ADMIN_PASSWORD environment variable.')
+        return False
     url = f"{BASE}/api/auth/login"
     try:
         r = requests.post(url, data={'username': username, 'password': password}, timeout=10)
