@@ -1,0 +1,11 @@
+# Minimal runtime requirements for the web app (use to quickly install only web/runtime deps)
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-dotenv==1.0.1
+sqlalchemy==2.0.35
+psycopg2-binary==2.9.9
+requests==2.31.0
