@@ -15,8 +15,14 @@ WORKDIR /app
 RUN useradd --create-home --shell /bin/bash appuser
 
 # copy only requirements first to leverage Docker cache
+# Prefer prod-requirements.txt when present to avoid installing heavy dev/ML deps in runtime image
+COPY prod-requirements.txt /app/prod-requirements.txt
 COPY requirements.txt /app/requirements.txt
-RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN if [ -f /app/prod-requirements.txt ]; then \
+            pip install --no-cache-dir -r /app/prod-requirements.txt; \
+        else \
+            pip install --no-cache-dir -r /app/requirements.txt; \
+        fi
 
 # copy application
 COPY . /app
@@ -57,10 +63,15 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first (for layer caching)
+COPY prod-requirements.txt .
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Python dependencies. If a smaller prod-requirements.txt is provided use it.
+RUN if [ -f prod-requirements.txt ]; then \
+            pip install --no-cache-dir -r prod-requirements.txt; \
+        else \
+            pip install --no-cache-dir -r requirements.txt; \
+        fi
 
 # Copy application code
 COPY . .
