@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.1
+    hooks:
+      - id: detect-secrets
+        args: [--baseline, .secrets.baseline]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+# Note: Install pre-commit locally and run `pre-commit install` to enable
+# This is a lightweight protection to catch secrets before committing.
