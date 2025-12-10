@@ -1,0 +1,37 @@
+{
+  // Python settings
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}",
+    "${workspaceFolder}/app"
+  ],
+  "python.analysis.typeCheckingMode": "off",
+  "python.linting.enabled": false,
+  
+  // Jinja2 template settings - ignore false positive errors
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "css.validate": false,
+  "javascript.validate.enable": false,
+  
+  // Files associations for Jinja2 templates
+  "files.associations": {
+    "*.html": "jinja-html"
+  },
+  
+  // Exclude common false positives
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportUnusedImport": "none"
+  },
+  
+  // Editor settings for templates
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
+  
+  // Ignore template syntax errors
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.advanced": {}
+}

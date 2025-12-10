@@ -25,7 +25,8 @@ def test_login(username='admin', password=None):
     try:
         r = requests.post(url, data={'username': username, 'password': password}, timeout=10)
         print(f"LOGIN {r.status_code}")
-        print(r.text)
+        # Do not print response body (may contain tokens). If debugging is required,
+        # enable detailed logging locally but avoid exposing responses in CI logs.
         return r.status_code == 200
     except Exception as e:
         print('LOGIN EXCEPTION', e)

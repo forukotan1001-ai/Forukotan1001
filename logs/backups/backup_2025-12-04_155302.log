@@ -1,0 +1,5 @@
+[ERROR] Exception: Cannot bind parameter 'ForegroundColor'. Cannot convert value "0.83189582824707" to type "System.ConsoleColor". Error: "Unable to match the identifier name 0.83189582824707 to a valid enumerator name. Specify one of the following enumerator names and try again:
+Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow, White"
+[INFO] No old backups to remove
+
+[DONE] Backup completed at 12/04/2025 15:53:04

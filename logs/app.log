@@ -1,0 +1,516 @@
+2025-11-19 08:03:47,263 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:03:47,283 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:03:47,284 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:03:47,285 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:03:47,286 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:03:47,286 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:03:48,716 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:04:04,557 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:04:04,559 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:04:04,576 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:04:04,578 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:04:04,579 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:04:04,580 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:05:12,885 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:05:19,696 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:05:19,700 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:05:19,701 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:05:19,702 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:05:19,703 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:05:19,704 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:06:10,394 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:06:15,946 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:06:15,949 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:06:15,951 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:06:15,952 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:06:15,953 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:06:15,954 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:09:31,022 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:09:31,025 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:09:31,026 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:09:31,026 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:09:31,026 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:09:31,027 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:09:32,543 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:17:59,667 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:17:59,671 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:17:59,672 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:17:59,672 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:17:59,673 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:17:59,673 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:18:27,904 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:19:17,456 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:19:17,460 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:19:17,460 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:19:17,461 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:19:17,462 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:19:17,463 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:20:17,618 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:35:49,551 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:35:49,556 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:35:49,557 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:35:49,558 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:35:49,558 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:35:49,559 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 08:42:46,025 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 08:53:31,157 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 08:53:31,158 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 08:53:31,159 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 08:53:31,160 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 08:53:31,161 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 08:53:31,162 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:02:51,773 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:03:02,475 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:03:02,479 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:03:02,480 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:03:02,481 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:03:02,482 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:03:02,483 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:03:05,449 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:03:17,083 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:03:17,086 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:03:17,087 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:03:17,088 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:03:17,089 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:03:17,089 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:04:13,092 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:04:20,584 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:04:20,587 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:04:20,587 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:04:20,588 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:04:20,589 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:04:20,589 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:04:28,184 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:16:12,487 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:16:12,489 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:16:12,490 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:16:12,490 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:16:12,491 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:16:12,491 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:16:15,236 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:17:17,814 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:17:17,817 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:17:17,818 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:17:17,819 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:17:17,820 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:17:17,820 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:17:28,109 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:17:45,934 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:17:45,938 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:17:45,939 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:17:45,940 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:17:45,941 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:17:45,942 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:17:56,590 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:21:59,550 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:21:59,553 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:21:59,554 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:21:59,555 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:21:59,556 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:21:59,557 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:22:55,234 - root - ERROR - Unhandled exception: 'network.html' not found in search path: 'templates'
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\web.py", line 66, in network_page
+    return templates.TemplateResponse("network.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: 'network.html' not found in search path: 'templates'
+2025-11-19 09:28:32,882 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:29:45,067 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:29:45,071 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:29:45,072 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:29:45,073 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:29:45,074 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:29:45,075 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:30:37,990 - root - ERROR - Unhandled exception: 'threats.html' not found in search path: 'templates'
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\web.py", line 72, in threats_page
+    return templates.TemplateResponse("threats.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: 'threats.html' not found in search path: 'templates'
+2025-11-19 09:31:47,254 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:32:03,007 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:32:03,010 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:32:03,011 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:32:03,011 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:32:03,012 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:32:03,012 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:37:10,836 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:54:32,279 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:54:32,283 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:54:32,284 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:54:32,285 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:54:32,285 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:54:32,285 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:54:47,619 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:55:04,140 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:55:04,143 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:55:04,144 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:55:04,145 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:55:04,146 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:55:04,146 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:55:34,092 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 09:55:55,384 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 09:55:55,388 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 09:55:55,389 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 09:55:55,390 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 09:55:55,391 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 09:55:55,392 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 09:56:01,373 - root - ERROR - Unhandled exception: 'devices.html' not found in search path: 'templates'
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\web.py", line 54, in devices_page
+    return templates.TemplateResponse("devices.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: 'devices.html' not found in search path: 'templates'
+2025-11-19 09:56:28,615 - root - ERROR - Unhandled exception: 'devices.html' not found in search path: 'templates'
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\web.py", line 54, in devices_page
+    return templates.TemplateResponse("devices.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: 'devices.html' not found in search path: 'templates'
+2025-11-19 10:01:32,573 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:01:32,575 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:01:32,576 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:01:32,577 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:01:32,577 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:01:32,578 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:01:44,828 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:01:59,458 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:01:59,461 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:01:59,462 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:01:59,462 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:01:59,462 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:01:59,463 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:02:22,680 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:03:40,075 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:03:40,078 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:03:40,079 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:03:40,081 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:03:40,082 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:03:40,083 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:06:46,375 - root - ERROR - Unhandled exception: 'devices.html' not found in search path: 'templates'
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Python314\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\web.py", line 54, in devices_page
+    return templates.TemplateResponse("devices.html", {"request": request})
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 209, in TemplateResponse
+    template = self.get_template(name)
+  File "C:\Python314\Lib\site-packages\starlette\templating.py", line 132, in get_template
+    return self.env.get_template(name)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: 'devices.html' not found in search path: 'templates'
+2025-11-19 10:18:18,144 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:18:37,211 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:18:37,215 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:18:37,215 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:18:37,216 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:18:37,217 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:18:37,217 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:19:05,955 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:19:20,215 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:19:20,218 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:19:20,219 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:19:20,219 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:19:20,220 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:19:20,221 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:23:01,828 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:25:28,366 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:25:28,368 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:25:28,369 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:25:28,369 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:25:28,369 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:25:28,370 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:26:19,907 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:26:34,888 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:26:34,891 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:26:34,892 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:26:34,893 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:26:34,894 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:26:34,895 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:27:11,121 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:27:26,525 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:27:26,528 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:27:26,529 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:27:26,529 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:27:26,530 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:27:26,530 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:27:34,310 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:28:23,731 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:28:23,734 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:28:23,735 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:28:23,736 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:28:23,737 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:28:23,738 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:28:33,549 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:28:52,291 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:28:52,293 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:28:52,294 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:28:52,294 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:28:52,295 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:28:52,295 - app.ml.model_loader - INFO - Loaded 3 ML models
+2025-11-19 10:29:30,403 - root - INFO - Shutting down UebaSecurityV2 Application...
+2025-11-19 10:29:50,001 - root - INFO - Starting UebaSecurityV2 Application...
+2025-11-19 10:29:50,004 - app.ml.model_loader - INFO - Loading ML models...
+2025-11-19 10:29:50,005 - app.ml.model_loader - WARNING - User anomaly model not found, using default
+2025-11-19 10:29:50,006 - app.ml.model_loader - WARNING - Device anomaly model not found, using default
+2025-11-19 10:29:50,007 - app.ml.model_loader - WARNING - Network anomaly model not found, using default
+2025-11-19 10:29:50,008 - app.ml.model_loader - INFO - Loaded 3 ML models

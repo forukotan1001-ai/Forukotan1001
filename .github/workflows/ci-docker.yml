@@ -7,6 +7,24 @@ on:
     branches: [ main, master ]
 
 jobs:
+  secret-scan:
+    name: Quick secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Quick grep for common secret patterns
+        run: |
+          set -e
+          echo "Running quick secret scan (simple grep)"
+          # Patterns that indicate secrets; update as needed
+          if git grep -nE "SECRET_KEY|SMTP_PASSWORD|AD_PASSWORD|DB_PASSWORD=|EMERGENCY_ADMIN_PASSWORD|BEGIN PRIVATE KEY|AKIA[0-9A-Z]{16}" -- ':!*.md' || true; then
+            echo "Potential secrets found in repository. Please remove or rotate before merging." 
+            git grep -nE "SECRET_KEY|SMTP_PASSWORD|AD_PASSWORD|DB_PASSWORD=|EMERGENCY_ADMIN_PASSWORD|BEGIN PRIVATE KEY|AKIA[0-9A-Z]{16}" || true
+            exit 1
+          fi
+
   build-scan-test:
     runs-on: ubuntu-latest
     steps:
@@ -59,6 +77,17 @@ jobs:
           # run migration script inside the image via compose one-off run
           # this will fail the job if migrations exit non-zero
           docker compose run --rm -e DATABASE_URL=postgresql://postgres:example@db:5432/ueba_security web python infrastructure/02_auto_migration_on_startup.py
+
+      - name: Create smoke admin (CI)
+        env:
+          NEW_ADMIN_PASSWORD: ${{ secrets.SMOKE_PASSWORD }}
+        run: |
+          if [ -z "$NEW_ADMIN_PASSWORD" ]; then
+            echo "SMOKE_PASSWORD secret not set - skipping admin create (ensure CI secret SMOKE_PASSWORD is configured)";
+          else
+            echo "Creating smoke admin (password provided by secret)"
+            docker compose run --rm -e NEW_ADMIN_PASSWORD="$NEW_ADMIN_PASSWORD" web python tools/set_admin_password.py || true
+          fi
 
       - name: Bring up web service
         run: |

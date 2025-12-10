@@ -1,0 +1,247 @@
+INFO:     Started server process [26088]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+ERROR:root:Database session error: (psycopg2.errors.UndefinedColumn) column users.mfa_enabled does not exist
+LINE 1: ...ed_login_attempts AS users_failed_login_attempts, users.mfa_...
+                                                             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.full_name AS users_full_name, users.role AS users_role, users.department AS users_department, users.is_active AS users_is_active, users.risk_score AS users_risk_score, users.ad_user_id AS users_ad_user_id, users.ad_synced AS users_ad_synced, users.ad_distinguished_name AS users_ad_distinguished_name, users.login_count AS users_login_count, users.failed_login_attempts AS users_failed_login_attempts, users.mfa_enabled AS users_mfa_enabled, users.mfa_secret AS users_mfa_secret, users.mfa_method AS users_mfa_method, users.mfa_backup_codes AS users_mfa_backup_codes, users.mfa_verified_at AS users_mfa_verified_at, users.baseline_login_hours AS users_baseline_login_hours, users.baseline_locations AS users_baseline_locations, users.baseline_devices AS users_baseline_devices, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.last_login AS users_last_login, users.last_login_ip AS users_last_login_ip 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'admin', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+ERROR:root:Database error on /api/auth/login: (psycopg2.errors.UndefinedColumn) column users.mfa_enabled does not exist
+LINE 1: ...ed_login_attempts AS users_failed_login_attempts, users.mfa_...
+                                                             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.full_name AS users_full_name, users.role AS users_role, users.department AS users_department, users.is_active AS users_is_active, users.risk_score AS users_risk_score, users.ad_user_id AS users_ad_user_id, users.ad_synced AS users_ad_synced, users.ad_distinguished_name AS users_ad_distinguished_name, users.login_count AS users_login_count, users.failed_login_attempts AS users_failed_login_attempts, users.mfa_enabled AS users_mfa_enabled, users.mfa_secret AS users_mfa_secret, users.mfa_method AS users_mfa_method, users.mfa_backup_codes AS users_mfa_backup_codes, users.mfa_verified_at AS users_mfa_verified_at, users.baseline_login_hours AS users_baseline_login_hours, users.baseline_locations AS users_baseline_locations, users.baseline_devices AS users_baseline_devices, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.last_login AS users_last_login, users.last_login_ip AS users_last_login_ip 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'admin', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column users.mfa_enabled does not exist
+LINE 1: ...ed_login_attempts AS users_failed_login_attempts, users.mfa_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\UebaSecurityV2\app\routes\auth.py", line 162, in login
+    user = db.query(User).filter(User.username == form_data.username).first()
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adi\AppData\Local\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column users.mfa_enabled does not exist
+LINE 1: ...ed_login_attempts AS users_failed_login_attempts, users.mfa_...
+                                                             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.full_name AS users_full_name, users.role AS users_role, users.department AS users_department, users.is_active AS users_is_active, users.risk_score AS users_risk_score, users.ad_user_id AS users_ad_user_id, users.ad_synced AS users_ad_synced, users.ad_distinguished_name AS users_ad_distinguished_name, users.login_count AS users_login_count, users.failed_login_attempts AS users_failed_login_attempts, users.mfa_enabled AS users_mfa_enabled, users.mfa_secret AS users_mfa_secret, users.mfa_method AS users_mfa_method, users.mfa_backup_codes AS users_mfa_backup_codes, users.mfa_verified_at AS users_mfa_verified_at, users.baseline_login_hours AS users_baseline_login_hours, users.baseline_locations AS users_baseline_locations, users.baseline_devices AS users_baseline_devices, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.last_login AS users_last_login, users.last_login_ip AS users_last_login_ip 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'admin', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:     192.168.0.6:61683 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61692 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61706 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61725 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61862 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61868 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61883 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61901 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61926 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+INFO:     192.168.0.6:61961 - "WebSocket /api/ws/security-feed" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     connection closed
+ERROR:root:Database session error: 401: Not authenticated
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ERROR:root:Database session error: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:root:Value error on /api/printers/status: 1 validation error for PrinterStatusResponse
+model
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type

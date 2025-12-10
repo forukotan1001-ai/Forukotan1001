@@ -1,0 +1,25 @@
+2025-11-20 21:10:03,617 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:03,618 - __main__ - INFO - CREATING APPLICATION...
+2025-11-20 21:10:03,618 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:04,898 - root - INFO - ✓ Database connection established successfully
+2025-11-20 21:10:04,900 - root - INFO - ============================================================
+2025-11-20 21:10:04,900 - root - INFO - Creating UEBA Security Platform v2.0
+2025-11-20 21:10:04,901 - root - INFO - ============================================================
+2025-11-20 21:10:07,416 - root - INFO - ✓ ML model loader initialized
+2025-11-20 21:10:07,438 - root - INFO - ✓ Rate limiting middleware enabled
+2025-11-20 21:10:07,673 - passlib.utils.compat - DEBUG - loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2025-11-20 21:10:07,674 - passlib.utils.compat - DEBUG - loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2025-11-20 21:10:07,674 - passlib.utils.compat - DEBUG - loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2025-11-20 21:10:07,724 - passlib.registry - DEBUG - registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2025-11-20 21:10:09,075 - app.services.file_server_monitor - INFO - Added file server monitor: 192.168.0.9
+2025-11-20 21:10:09,076 - root - INFO - ✓ Default file servers initialized
+2025-11-20 21:10:09,076 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:09,077 - __main__ - INFO - ✓ APPLICATION CREATED SUCCESSFULLY
+2025-11-20 21:10:09,077 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:09,078 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:09,078 - __main__ - INFO - 🚀 STARTING SERVER WITH DEBUG MODE
+2025-11-20 21:10:09,078 - __main__ - INFO - ================================================================================
+2025-11-20 21:10:09,079 - __main__ - INFO - Host: 0.0.0.0
+2025-11-20 21:10:09,079 - __main__ - INFO - Port: 8000
+2025-11-20 21:10:09,080 - __main__ - INFO - Log Level: DEBUG
+2025-11-20 21:10:09,081 - __main__ - INFO - ================================================================================

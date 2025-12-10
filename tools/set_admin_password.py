@@ -51,10 +51,10 @@ def main():
             pass
         db.commit()
 
-        # Print password once for operator to record. Do NOT keep this in logs/CI.
+        # Do NOT print the password into logs. CI logs are persistent and may be public.
+        # Operators should record the password at input time or use a secure secret store.
         print('\n✅ Admin password updated successfully for user: admin')
-        print('   PLEASE RECORD THIS PASSWORD SECURELY. It will not be stored in this repo.')
-        print(f'   New password (displayed once): {pwd}\n')
+        print('   PLEASE RECORD THIS PASSWORD SECURELY. The plaintext password is NOT echoed by this script.')
 
     except Exception as e:
         print('ERROR while updating admin password:', e)

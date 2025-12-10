@@ -1,0 +1,70 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2025 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2025 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.6.1
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Program Files (x86)\Inno Setup 6\ISPPBuiltins.iss
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 30
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 30
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Dirs] section, line 37
+Parsing [Icons] section, line 40
+Parsing [Icons] section, line 41
+Parsing [Icons] section, line 42
+Parsing [Icons] section, line 43
+Parsing [Run] section, line 46
+Parsing [Run] section, line 47
+Parsing [Run] section, line 48
+Parsing [UninstallRun] section, line 51
+Parsing [UninstallRun] section, line 52
+Parsing [Files] section, line 33
+Parsing [Files] section, line 34
+   Reading version info: D:\\UebaSecurityV2\\agent\\src\\config.example.ini
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: D:\\UebaSecurityV2\\agent\\dist\\UEBAAgent.exe
+   Compressing: D:\\UebaSecurityV2\\agent\\src\\config.example.ini
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+Warning: There are [UninstallRun] section entries without a RunOnceId parameter. By assigning a string to RunOnceId, you can ensure that a particular [UninstallRun] entry will only be executed once during uninstallation. See the "[UninstallRun]" topic in help file for more information.
+
+Successful compile (6.469 sec). Resulting Setup program filename is:
+D:\UebaSecurityV2\agent\dist\UEBA-Security-Agent-Setup-v1.0.0.exe

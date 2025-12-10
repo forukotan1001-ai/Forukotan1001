@@ -1,0 +1,28 @@
+INFO:     192.168.0.6:61541 - "POST /api/auth/login HTTP/1.1" 500 Internal Server Error
+INFO:     192.168.0.6:61541 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62000 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/analytics/summary HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62040 - "GET /api/alerts?limit=20 HTTP/1.1" 307 Temporary Redirect
+INFO:     192.168.0.6:62040 - "GET /api/alerts/?limit=20 HTTP/1.1" 401 Unauthorized
+INFO:     192.168.0.6:62000 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62000 - "GET /api/printers/analytics/summary HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62040 - "GET /api/dashboard/stats HTTP/1.1" 404 Not Found
+INFO:     192.168.0.6:62000 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62000 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62000 - "GET /api/printers/analytics/summary HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62040 - "GET /api/dashboard/stats HTTP/1.1" 404 Not Found
+INFO:     192.168.0.6:62040 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62040 - "GET /api/dashboard/stats HTTP/1.1" 404 Not Found
+INFO:     192.168.0.6:62000 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62040 - "GET /api/docs HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62000 - "GET /api/printers/analytics/summary HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62001 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
+INFO:     192.168.0.6:62549 - "GET /api/printers/jobs/recent?hours=24&limit=20 HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62550 - "GET /api/printers/analytics/summary HTTP/1.1" 200 OK
+INFO:     192.168.0.6:62548 - "GET /api/printers/status HTTP/1.1" 400 Bad Request
