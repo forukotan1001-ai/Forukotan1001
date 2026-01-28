@@ -17,10 +17,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Cloud SDK
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          token_format: 'access_token'
+
+      - name: Set up gcloud CLI
         uses: google-github-actions/setup-gcloud@v1
         with:
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
           project_id: ${{ secrets.STAGING_PROJECT_ID }}
 
       - name: Install Terraform
@@ -36,8 +41,7 @@ jobs:
 
       - name: Terraform init
         working-directory: ./infra
-        run: |
-          terraform init -backend-config="bucket=${TF_BUCKET}"
+        run: terraform init -backend-config="bucket=${TF_BUCKET}"
 
       - name: Terraform validate
         working-directory: ./infra
@@ -48,7 +52,6 @@ jobs:
         run: |
           terraform plan -out=tfplan.binary
           terraform show -json tfplan.binary > tfplan.json
-        continue-on-error: false
 
       - name: Upload tfplan artifact
         uses: actions/upload-artifact@v4
@@ -65,10 +68,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Cloud SDK
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up gcloud CLI
         uses: google-github-actions/setup-gcloud@v1
         with:
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
           project_id: ${{ secrets.STAGING_PROJECT_ID }}
 
       - name: Download tfplan artifact
@@ -79,6 +86,4 @@ jobs:
 
       - name: Apply Terraform
         working-directory: ./infra
-        run: |
-          # This step applies the plan; run only when you intend to change infra.
-          terraform apply -auto-approve tfplan.binary
+        run: terraform apply -auto-approve tfplan.binary
