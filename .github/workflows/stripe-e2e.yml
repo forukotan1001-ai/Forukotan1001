@@ -1,0 +1,23 @@
+name: Stripe E2E Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  stripe-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Stripe CLI
+        run: |
+          curl -L https://stripe-cli.github.io/install.sh | bash
+
+      - name: Run Stripe Tests
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          echo "Running Stripe E2E tests..."
+          # Add your test commands here
